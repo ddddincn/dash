@@ -1,0 +1,12 @@
+# .dockerignore
+
+# Ignore git files
+.git
+.gitignore
+
+# Ignore logs
+logs
+
+# Ignore vscode settings
+.vscode
+

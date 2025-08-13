@@ -1,0 +1,27 @@
+server:
+    host: 0.0.0.0
+    port: "8080"
+logging:
+    filename: dash.log
+    level:
+        app: info
+        gorm: warn
+    maxsize: 10
+    maxage: 30
+    compress: false
+sqlite3:
+    enable: false
+    filename: dash.db
+mysql:
+    dsn: root:123456@tcp(localhost:3306)/dash_dev_db?charset=utf8mb4&parseTime=True&loc=Local&interpolateParams=true
+cache:
+    redis:
+        addr: localhost:6379
+        password: ""
+        db: 0
+    default_ttl: 5m
+dash:
+    log_mode: console
+    mode: production
+    work_dir: ./
+    log_dir: ./logs
